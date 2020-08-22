@@ -1,0 +1,248 @@
+/* COMMON */
+$break-extra-small: 320px;
+$break-small: 560px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extra-large: 1280px;
+
+@mixin respond-to($media) {
+  @if $media==small-screen {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  }
+
+  @else if $media==medium-screen {
+    @media only screen and (max-width: $break-medium) {
+      @content;
+    }
+  }
+
+  @else if $media==large-screen {
+    @media only screen and (max-width: $break-large) {
+      @content;
+    }
+  }
+
+  @else if $media==extra-large-screen {
+    @media only screen and (max-width: $break-extra-large) {
+      @content;
+    }
+  }
+}
+/*COMMON*/
+
+
+$duration: 0s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: fixed;
+  // bottom: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 80px;
+  background-color: #000000;
+  // padding-left: 100%;
+  box-sizing: content-box;
+  z-index: 1030;
+  transition: height 700ms;
+  text-align:center;
+
+  &.hide {
+    height: 0 !important;
+  }
+
+  .ticker {
+
+    display: inline-block;
+    // height: 36px;
+    height:80px;
+    // line-height: 4rem;
+    white-space: nowrap;
+    // padding-right: 100%;
+    box-sizing: content-box;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+
+    &__item {
+      display: inline-block;
+      // padding: 0 50px;
+      padding-right: 30%;
+      // font-size: 2rem;
+      // font-size: 26px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      padding-top:20px;
+
+      span{
+        font-size:11px;
+      }
+
+      .phone-link {
+        color: #ffffff;
+      }
+
+      .phone {
+        max-width: 16px;
+      }
+    }
+  }
+}
+
+//end newsticker
+
+//start body 
+.bg-main{
+  background:url(https://ysq-interview.s3-ap-southeast-1.amazonaws.com/1.jpg) center center no-repeat;
+  // padding:400px;
+  margin-top:80px;
+  min-height:520px;
+
+  .banner-title{
+    font-size:52px;
+    line-height:55px;
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    padding-top:200px;
+  }
+
+  .right-nav{
+    display:flex;
+    justify-content:flex-end;
+    // align-items:flex-end;
+
+    .nav-icon{
+      margin:5px;
+      padding:20px 5px;
+    }
+  }
+}
+
+body{
+  background-color:#eeeeee !important;
+}
+
+.body-container{
+  padding:30px 0;
+  background-color:#eeeeee;
+
+  h1{
+    font-size:144px;
+    line-height:150px;
+    padding:50px 0;
+  }
+
+  .sub-content{
+    &-container{
+      padding:50px 0;
+      display:flex;
+      position:relative;
+      // flex-direction:row-reverse;
+      // flex-basis:50%;
+      @include respond-to(large-screen) {
+        flex-wrap:wrap;
+      }
+    }
+
+    &-txt{
+      width:70%;
+      padding:40px 0;
+      z-index:3;
+      max-width:630px;
+      margin:auto;
+
+      @include respond-to(large-screen) {
+        width:100%;
+      }
+
+      .sub-content-title{
+        font-size:52px;
+        line-height:55px;
+        padding-bottom:40px;
+      }
+
+      p{
+        font-size:16px;
+        line-height:25px;
+        padding-bottom:20px;
+      }
+
+      .shop-btn{
+        background-color:#000000;
+        padding:10px 22px;
+      }
+    }
+
+    &-img{
+      width:50%;
+
+      @include respond-to(large-screen) {
+        width:100%;
+      }
+
+      .img-content{
+        position:absolute;
+        right:0;
+        // z-index:-1;
+
+        &.side-left{
+          left:0;
+          right:auto;
+        }
+
+        @include respond-to(large-screen) {
+          position:relative;
+          z-index:1;
+          text-align:center;
+        }
+
+        img{
+          max-width:600px;
+        }
+      }
+    }
+  }
+}
+
+.page-footer{
+  background-color:#000000;
+  color:#ffffff;
+}
+
+//end body

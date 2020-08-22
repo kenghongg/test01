@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
 
-import { CardList } from './components/card-list/card-list.component';
-import { SearchBox } from './components/search-box/search-box.component';
 
-import './App.css';
+// import { NavBar } from './components/nav-bar/nav-bar.component';
+// import { CardList } from './components/card-list/card-list.component';
+// import { SearchBox } from './components/search-box/search-box.component';
+
+// import './components/news-ticker.styles.scss';
+
+import './App.scss';
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = { 
-      monsters: [],
-      searchField: ''
+      monsters: []
+      // searchField: ''
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
   
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('http://hokenghong.com/data.json')
     .then(response => response.json())
-    // .then(users =>  console.log(users))
-    .then(users => this.setState({ monsters: users }));
+    .then(font =>  console.log(font))
+    .then(font => this.setState({ monsters: font }));
   }
 
   handleChange = (e) => {
@@ -29,23 +33,18 @@ class App extends Component {
   }
 
   render() {
-    const { monsters, searchField } = this.state;
+    // const { monsters, searchField } = this.state;
     // const monsters = this.state.monsters;
     // const searchField = this.state.searchField;
 
-    const filteredMonsters = monsters.filter(monster =>
-      monster.name.toLowerCase().includes(searchField.toLowerCase())
-    );
+    // const filteredMonsters = monsters.filter(monster =>
+    //   monster.name.toLowerCase().includes(searchField.toLowerCase())
+    // );
 
     return (
       <div className="App">
-        <h1>Monster Rolodex</h1>
-        <SearchBox 
-          placeholder='search monster'
-          // handleChange={e => this.setState({ searchField:e.target.value })}
-          handleChange={this.handleChange}
-        />
-        <CardList monsters={filteredMonsters} />
+        <h1>YSQ Test</h1>
+        
       </div>
     )
   }

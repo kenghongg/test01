@@ -1,0 +1,80 @@
+{
+    "font": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/font.pdf",
+    "mockup": {
+        "desktop": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/desktop.jpg",
+        "tablet": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/mobile.jpg",
+        "mobile": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/tablet.jpg"
+    },
+    "header": [
+        "WARNING: This product contains nicotine. Nicotine is an addictive chemical.",
+        "Free shipping for orders above $88, Click here to check global shipping time >"
+    ],
+    "body": [
+        {
+            "title": [
+                "Our Story",
+                "iMac",
+                "Retina Display",
+                "Nano Texture Glass",
+                "Graphics"
+            ],
+            "content": [
+                "Draws you in. Blows you away. Everything looks better on a Retina display, with its one billion colours and 500 nits of brightness. Photos and graphics leap off the screen. Text is super-sharp. And for the first time, the 27-inch iMac features True Tone technology for a more natural viewing experience, and a nano-texture glass option to reduce glare to the barest minimum.",
+                "Minimum glare. Maximum detail. First seen on the Pro Display XDR, the nano-texture glass option on the 27-inch iMac is a game-changer for workspaces with sunlight, direct light or changing lighting conditions. Unlike typical matt display coatings, the nano-texture is etched into the glass at the nanometre level. This reduces glare while preserving contrast, for jaw-dropping image quality.",
+                "Next-level. At any level. The graphics on iMac make everything a sight to behold. The 21.5-inch model comes with AMD Radeon Pro 500X series graphics, and can be configured with an AMD Radeon Pro Vega 20 GPU to power through tasks like 3D rendering or complex video effects with ease. And the 27-inch model brings AMD Radeon Pro 5000 series graphics with up to 16GB of GDDR6 memory for graphics-intensive workflows like editing UHD video or developing lifelike game environments."
+            ]
+        },
+        {
+            "title": [
+                "Sharks Story",
+                "Cinematic In Every Sense",
+                "Are Shark Attacks on Rise?",
+                "Know About Sharks",
+                "Sharks have Two…"
+            ],
+            "content": [
+                "Globally in 2019, there were 64 reported shark attacks worldwide, with two fatalities, which is about average year over year. Dr. Neil Hammerschlag, the Director of The Shark Research and Conservation Program at The University of Miami spoke about shark attacks, or bites as he refers to them as. 'Ultimately a shark bite is so rare that it is hard to call any inferences based on pattern.'",
+                "Dr. Austin Gallagher from the research and conservation organization Beneath The Waves, reiterates Dr. Hammerschlag's sentiment. 'Large sharks, including white sharks, have always occurred throughout New England Waters. Researchers have been tracking them widely throughout the region and the Gulf of Maine is certainly within their range.'",
+                "Did you know that there are very few observed instances of sharks mating in the wild? We do know some things about mating due to aquarium research and actual reproduction. For example, sharks have two penises, sort of. Known as claspers, these two reproductive organs are only on male sharks and they act as the channel for the semen to enter the female’s cloaca during mating. The clasper essentially latches on to the female to facilitate reproduction."
+            ]
+        }
+    ],
+    "footer": {
+        "copyright": [
+            "Copyright © 2099 Pineapple Inc. All rights reserved.",
+            "© 2020, Square Digital and Ball Digital Inc. All rights reserved.",
+            "Service code"
+        ],
+        "linktext": [
+            "Newsroom",
+            "Contact Us",
+            "FAQs",
+            "Tracking Your",
+            "Order",
+            "Warranty"
+        ],
+        "social_media": [
+            "Facebook",
+            "Pinterest",
+            "Instagram"
+        ]
+    },
+    "images": {
+        "header": [
+            "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/1.jpg"
+        ],
+        "body": [
+            "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/2.jpg",
+            "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/3.jpg",
+            "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/4.jpg"
+        ]
+    },
+    "logo": {
+        "header": {
+            "account": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/acc.svg",
+            "cart": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/cart.svg",
+            "location": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/location.svg",
+            "logo": "https://ysq-interview.s3-ap-southeast-1.amazonaws.com/logo.jpg"
+        }
+    }
+}
